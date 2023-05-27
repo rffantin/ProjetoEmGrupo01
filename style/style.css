@@ -86,8 +86,6 @@ header .barra-nav a {
 }
 
 
-
-
 /* animação da barra de navegação */
 header.barra-nav a:hover {
     color: rgb(208, 221, 211)
@@ -164,19 +162,6 @@ header .fa-bars {
     height: 100vh;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* responsividade (media queries)*/
