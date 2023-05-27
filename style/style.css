@@ -1,13 +1,14 @@
-
 /* reset do css */
 * {
-margin: 0; padding: 0;
-box-sizing: border-box;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-outline: none; border: none;
-text-decoration: none;
-text-transform: capitalize;
-transition: .2s linear;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
 }
 
 
@@ -16,7 +17,7 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
-    overflow-x: hidden ;
+    overflow-x: hidden;
 }
 
 
@@ -25,7 +26,9 @@ header {
     height: 13vh;
     width: 100vw;
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     background: #6C51A6;
     padding: 2rem 20px;
     display: flex;
@@ -39,14 +42,12 @@ header {
 /*  estilização do logo */
 
 
-header .LOGO {
-    
-}
+header .LOGO {}
 
 .imagemlogo {
     width: 260px;
     height: 160px;
-    
+
 }
 
 .imagemlogo:hover {
@@ -58,15 +59,15 @@ header span {
 
     color: green;
 
-}/* barra de navegação */
+}
 
-header .barra-nav a{
-    font-size: 2rem;;
+/* barra de navegação */
+
+header .barra-nav a {
+    font-size: 2rem;
+    ;
     padding: 0.1.5rem;
     color: rgb(240, 245, 240)
-
-
-
 }
 
 .listinha {
@@ -76,7 +77,7 @@ header .barra-nav a{
 
 
 
-    
+
 }
 
 .listinha li:hover {
@@ -89,12 +90,12 @@ header .barra-nav a{
 
 /* animação da barra de navegação */
 header.barra-nav a:hover {
-    color:rgb(208, 221, 211)
+    color: rgb(208, 221, 211)
 }
 
 
 
-header .icones a{
+header .icones a {
     font-size: 2.5rem;
     color: #f1eeee;
     margin-left: 1.5rem;
@@ -102,27 +103,67 @@ header .icones a{
 
 }
 
-header .icones a:hover{
+header .icones a:hover {
 
     color: rgb(77, 77, 77);
 }
 
 
-header #barrinha{
+header #barrinha {
 
     display: none;
 }
- header .fa-bars {
+
+header .fa-bars {
     font-size: 3rem;
     color: #333;
     border-radius: .5rem;
-    padding: 1.5rem;;
+    padding: 1.5rem;
+    ;
     cursor: pointer;
-    border: .1rem solid rgba(0,0,0.3);
+    border: .1rem solid rgba(0, 0, 0.3);
     display: none;
-    
+
 }
 
+
+/* PAGINAS DAS SECCS  */
+
+#inicio {
+    background-image: url(../imagens/background_flower.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+
+
+#quemsomos {
+
+    background-color: blue;
+
+    height: 100vh;
+}
+
+
+#produtos {
+    background-color: orange;
+    height: 100vh;
+
+
+}
+
+
+#equipe {
+    background-color: yellow;
+    height: 100vh;
+
+}
+
+#contato {
+    background-color: red;
+    height: 100vh;
+
+}
 
 
 
@@ -145,11 +186,11 @@ header #barrinha{
 
     html {
         font-size: 55%
+    }
 
-}
-header {
-    padding: 2rem;
-}
+    header {
+        padding: 2rem;
+    }
 
 }
 
@@ -162,20 +203,22 @@ header {
     header .barra-nav {
 
         position: absolute;
-        top: 100%; left: 0; right: 0;
+        top: 100%;
+        left: 0;
+        right: 0;
         background: #eee;
-        border-top: .1rem solid rgba(0,0,0 .1);
-       
+        border-top: .1rem solid rgba(0, 0, 0 .1);
+
     }
 
-    header .barra-nav a{
+    header .barra-nav a {
         margin: 1.5rem;
         padding: 1.5rem;
         background: #fff;
-        border: .1rem solid rgba(0,0,0 .1);
+        border: .1rem solid rgba(0, 0, 0 .1);
         display: block;
         color: #333;
-        
+
     }
 
     .listinha {
@@ -193,11 +236,10 @@ header {
 
     html {
         font-size: 50%
+    }
+
+    header {
+        padding: 2rem;
+    }
 
 }
-header {
-    padding: 2rem;
-}
-
-}
-
