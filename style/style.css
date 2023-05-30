@@ -74,6 +74,7 @@ header .barra-nav a {
     gap: 40px;
     display: inline-flex;
     list-style: none;
+    
 
 
 
@@ -83,6 +84,7 @@ header .barra-nav a {
 .listinha li:hover {
 
     transform: scale(1.1);
+    animation: alternate-reverse;
 }
 
 
@@ -124,18 +126,28 @@ header .fa-bars {
 
 }
 
+section {
+    padding: 2rem 9%;
+}
+
 
 /* PAGINAS DAS SECCS  */
 
-#inicio {
+.inicio {
+    display: flex;
+    align-items: center;
     background-image: url(../imagens/background_flower.jpg);
-    height: 100vh;
+    min-height: 100vh;
+    background-position: center;
     background-size: cover;
+
+    
+    
 }
 
 
 
-#quemsomos {
+.quemsomos {
 
     background-color: blue;
 
@@ -143,7 +155,7 @@ header .fa-bars {
 }
 
 
-#produtos {
+.produtos {
     background-color: orange;
     height: 100vh;
 
@@ -151,13 +163,13 @@ header .fa-bars {
 }
 
 
-#equipe {
+.equipe {
     background-color: yellow;
     height: 100vh;
 
 }
 
-#contato {
+.contato {
     background-color: red;
     height: 100vh;
 
@@ -179,7 +191,7 @@ header .fa-bars {
 
 }
 
-@media (max-width: 728px) {
+@media (max-width: 768px) {
 
     html .fa-bars {
         display: block;
@@ -193,8 +205,15 @@ header .fa-bars {
         right: 0;
         background: #eee;
         border-top: .1rem solid rgba(0, 0, 0 .1);
-
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
+
+    header #barrinha:checked~.barra-nav {
+
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+
 
     header .barra-nav a {
         margin: 1.5rem;
@@ -204,7 +223,12 @@ header .fa-bars {
         display: block;
         color: #333;
 
+
     }
+
+
+
+
 
     .listinha {
 
@@ -220,11 +244,7 @@ header .fa-bars {
 
 
     html {
-        font-size: 50%
-    }
-
-    header {
-        padding: 2rem;
+        font-size: 55%
     }
 
 }
