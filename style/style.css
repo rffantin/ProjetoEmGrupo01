@@ -1,0 +1,538 @@
+/* reset do css */
+
+:root {
+
+    --border: .2rem solid rgba(0,0,0,.1);
+    --outline: .1rem solid rgba(0,0,0,.1);
+    --outline-hover: .2rem solid rgba(0,0,0,.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+
+/*  html como um todo estilização */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+
+/*  cabeçalho estilização */
+header {
+    height: 13vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(24, 24, 24, 0.747);
+    backdrop-filter: blur(10px);
+    padding: 2rem 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px black;
+}
+
+
+/*  estilização do logo */
+
+
+
+
+.imagemlogo {
+    width: 260px;
+    height: 160px;
+
+}
+
+.imagemlogo:hover {
+
+    transform: scale(1.1);
+}
+
+header span {
+
+    color: green;
+
+}
+
+/* barra de navegação */
+
+header .barra-nav a {
+    font-size: 2rem;
+    ;
+    padding: 0.1.5rem;
+    color: rgb(240, 245, 240)
+}
+
+.listinha {
+    gap: 40px;
+    display: inline-flex;
+    list-style: none;
+
+
+
+
+
+}
+
+
+
+
+.listinha li:hover {
+
+    transform: scale(1.1);
+    animation: alternate-reverse;
+}
+
+
+/* animação da barra de navegação */
+header.barra-nav a:hover {
+    color: rgb(208, 221, 211)
+}
+
+
+
+header .icones a {
+    font-size: 2.5rem;
+    color: #f1eeee;
+    margin-left: 1.5rem;
+
+
+}
+
+header .icones a:hover {
+
+    color: rgb(77, 77, 77);
+}
+
+
+header #barrinha {
+
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0.3);
+    display: none;
+
+}
+
+
+
+section {
+    padding: 2rem 9%;
+    display: flex;
+
+
+}
+
+
+/* PAGINAS DAS SECCS  */
+
+
+.foto1 {
+
+    background-color: #00e8f8;
+
+}
+
+
+
+/*  botao de comprar */
+
+
+
+
+
+
+
+.inicio {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: #e2d5d1;
+    min-height: 50vh;
+    text-align: center;
+}
+
+
+/* slides */
+
+.conteudo1 {
+    height: 350px;
+    width: 1900px;
+    overflow: hidden;
+    position: absolute;
+    top: 13%;
+    left: 0%;
+
+}
+
+
+
+.labelsBarrinha {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    bottom: 9px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    border-radius: 60px;
+    transition: .7s;
+}
+
+.bar {
+    width: 50px;
+    height: 17px;
+    border: 2px solid rgb(7, 7, 7);
+    margin: 6px;
+    border-radius: 50px;
+}
+
+.bar:hover {
+    background-color: #f3150d;
+}
+
+.slides input {
+    display: none;
+
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.slide {
+    width: 33%;
+    transition: 0.6s;
+
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+
+}
+
+#slide1:checked~.slide-s1 {
+
+    margin-left: 0;
+
+}
+
+#slide2:checked~.slide-s1 {
+
+    margin-left: -34%;
+
+}
+
+#slide3:checked~.slide-s1 {
+
+    margin-left: -67%;
+
+}
+
+/* section de caracteristicas  */
+
+.caracteristicas {
+    background: #e2d5d1;
+
+}
+
+.cabecalho {
+
+color: #1e0e46;
+text-align: center;
+padding: 2rem 0;
+padding-bottom: 3rem;
+font-size: 3.5rem;
+margin-left: 600px;
+}
+
+.cabecalho span{
+    background: rgb(5, 96, 25);
+    color: white;
+    display: block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.btn {
+
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    border: .2rem solid black;
+    color: #e95b5b;
+    cursor: pointer;
+    background: none;
+    font-size: 16px;
+}
+
+.caracteristicas .box-container {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 65px;
+    margin-top: 130px;
+    margin-left: -701px;
+    
+    
+ 
+}
+
+.caracteristicas .box-container .box {
+    padding: 10rem 1rem;
+    background: white;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgb(6, 6, 6);
+    margin-left: 10px;
+    border-radius: 50px;
+    width: 102%;
+
+}
+
+.box img {
+    width: 60%;
+}
+
+
+
+
+
+
+
+.quemsomos {
+
+    background-color: blue;
+
+    height: 100vh;
+}
+
+
+.produtos {
+    background-color: orange;
+    height: 100vh;
+
+
+}
+
+
+.equipe {
+    background-color: yellow;
+    height: 100vh;
+
+}
+
+.contato {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../imagens/background-contato.jpg);
+    display: flex;
+    flex-direction: row;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.contatotext {
+    width: 700px;
+    text-align: center;
+}
+
+.formulario {
+
+
+    width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+form input,
+form textarea {
+    outline: unset;
+    padding: 10px;
+    width: 350px;
+    color: rgb(0, 0, 0);
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+.contatotext {
+    width: 700px;
+    text-align: center;
+}
+
+.formulario {
+
+
+    width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+form input,
+form textarea {
+    outline: unset;
+    padding: 10px;
+    width: 350px;
+    color: rgb(0, 0, 0);
+    border: 1px solid;
+    border-radius: 20px;
+
+}
+
+form input:focus,
+form textarea:focus {
+    background-color: wheat
+}
+
+form input[type=submit] {
+    cursor: pointer;
+}
+
+
+form input:focus,
+form textarea:focus {
+    background-color: wheat
+}
+
+form input[type=submit] {
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+/* responsividade (media queries)*/
+
+@media (max-width:991px) {
+
+
+    html {
+        font-size: 55%
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    section {
+
+        padding: 2rem;
+    }
+
+    .inicio {
+        background-position: left;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    html .fa-bars {
+        display: block;
+    }
+
+    header .barra-nav {
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0 .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #barrinha:checked~.barra-nav {
+
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+
+
+    header .barra-nav a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0, 0, 0 .1);
+        display: block;
+        color: #333;
+
+
+    }
+
+
+
+
+    .listinha {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}
+
+
+
+
+
+@media (max-width:450px) {
+
+
+    html {
+        font-size: 55%
+    }
+
+}
