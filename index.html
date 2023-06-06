@@ -1,165 +1,456 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-    <!--inicio do head-->
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dona FLor</title>
-        <!-- font weasome link a baixo -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dona FLor</title>
+    <!-- font weasome link a baixo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bad+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- css aqui a baixo -->
-        <link rel="stylesheet" href="./style/style.css">
-    </head>
-    <!--fim do head-->
-    <!--inicio do body -->
-    <body>
-        <!--inicio do header -->
-        <header>
+    <!-- css aqui a baixo -->
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+
+<body>
+
+    <!--inicio do header -->
+    <header>
+
         <!-- BARRINHAS DAS LATERAIS -->
-            <input type="checkbox" name="" id="barrinha">
-            <label for="barrinha" class="fas fa-bars"></label>
+        <input type="checkbox" name="" id="barrinha">
+        <label for="barrinha" class="fas fa-bars"></label>
+
+
+
         <!-- LOGO DA LOJA -->
-            <a href="#" class="LOGO"><span></span><img class="imagemlogo" src="./imagens/donaflorlogo.png" alt=""></a>
+        <a href="#" class="LOGO"><span></span><img class="imagemlogo" src="./imagens/donaflorlogo.png" alt=""></a>
+
         <!-- BARRAS DE NAVEGAÇÂO DO HEADER -->
-            <nav class="barra-nav">
-                <ul class="listinha">
-                    <li> <a href="#inicio">Inicio</a></li>
-                    <li> <a href="#quemsomos">Sobre nós</a></li>
-                    <li> <a href="#produtos">Nossos produtos</a></li>
-                    <li> <a href="#equipe">Nossa equipe</a></li>
-                    <li> <a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+        <nav class="barra-nav">
+            <ul class="listinha">
+                <li> <a href="#inicio">Inicio</a></li>
+                <li> <a href="#sobrenos">Sobre nós</a></li>
+                <li> <a href="#produtos">Nossos produtos</a></li>
+                <li> <a href="#equipe">Nossa equipe</a></li>
+                <li> <a href="#contato">Contato</a></li>
+            </ul>
+
+        </nav>
         <!-- ICONES DO LADO DIREITO DO HEADER -->
-            <div class="icones">
-                <a href="" class="fas fa-heart"></a>
-                <a href="" class="fas fa-shopping-cart"></a>
-                <a href="" class="fas fa-user"></a>
-                <a href="" class="fas fa-search"></a>
-            </div>
-        </header>
-        <!--final do header-->
+        <div class="icones">
 
-        <!--inicio da main -->
-        <main>
-        <!-- inicio da section do inicio -->
-            <section class="inicio" id="inicio">
-            <div class="conteudo1">
+            <a href="" class="fas fa-shopping-cart"></a>
+        </div>
+
+        <!-- FIM DO HEADER -->
+
+    </header>
+
+    <main>
+
+        <!-- section englobando o slide -->
+        <section class="slides-iniciais" id="inicio">
+            <!-- inicio da div que controla o slide -->
+            <div class="slider">
                 <div class="slides">
-                    <input type="radio" name="slide" id="slide1">
-                    <input type="radio" name="slide" id="slide2">
-                    <input type="radio" name="slide" id="slide3">
-                    <div class="slide-s1">
-                        <img src="./imagens/rosas-59-e-90-23-home.png" alt="Rosas 59,90">
+                    <!-- botoes de troca de slide -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <!-- imagens dos slides  -->
+                    <div class="foto1">
+                        <img src="./imagens/bannerdesktop2.png" alt="Slide1">
                     </div>
+
                     <div class="slide">
-                        <img src="./imagens/flores-do-campo-a-partir-de-59-e-90-home.png" alt="Flores do campo 59,90">
+                        <img src="./imagens/bannerdesktop3.jpg" alt="slide2">
                     </div>
+
                     <div class="slide">
-                        <img src="./imagens/festival-orquideas1-home.png" alt="Festival das orquideas">
+                        <img src="./imagens/bannerdesktop4.png" alt="slide3">
+                    </div>
+
+
+
+                    <!-- botao de navegação automatica (os botoeszinhos que sao visiveis para troca de slide) -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                    <!-- botao manual para clicar em vez de esperar o slide troca -->
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
                     </div>
 
                 </div>
 
-                <div class="labelsBarrinha">
-                    <label class="bar" for="slide1"></label>
-                    <label class="bar" for="slide2"></label>
-                    <label class="bar" for="slide3"></label>
-                </div>
+
+
             </div>
-            </section>
+
+            </div>
+
+        </section>
 
         <!-- nossas caracteristicas -->
-            <section class="caracteristicas" id="caracteristicas">
+
+        <!-- começa a section que engloba os 3 cards iniciais -->
+        <section class="caracteristicas" id="caracteristicas">
+
+            <div class="TextoCaracteristica">
+                <!-- texto no qual se encontra escrito "nossas caracteristicas" -->
                 <h1 class="cabecalho"> Nossas <span>caracteristicas</span></h1>
-                <div class="box-container">
-                    <div class="box">
-                        <img  src="./imagens/caminhao.png" alt="">
-                        <h3>Delivery rapido</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipising eli. desertunt, earum!</p>
-                        <a class="btn" href="">Saiba Mais</a>
+            </div>
+
+            <!-- box que no qual controla todo o card por si -->
+            <div class="box-container">
+                <!-- as divs dos cards -->
+                <div class="box">
+                    <img src="./imagens/caminhao.png" alt="">
+                    <h3>Delivery </h3>
+                    <p>Temos entrega expressa a partir de 24 horas após a confirmação do pagamento. Além disso, contamos
+                        com frete grátis em produtos selecionados! </p>
+                    <a class="btn" href="">Saiba Mais</a>
+
+                </div>
+                <div class="box">
+                    <img src="./imagens/flores.png" alt="">
+                    <h3>Flores</h3>
+                    <p>Encontre aqui, na Dona Flor, os vasinhos que você precisa! Aqui, temos flores exóticas, arranjos
+                        de flores e muito mais para presentear quem você ama!</p>
+                    <a class="btn" href="">Saiba Mais</a>
+
+                </div>
+                <div class="box">
+                    <img src="./imagens/pagamento.png" alt="">
+                    <h3>Pagamentos</h3>
+                    <p>Com 5% de desconto no Pix ou no Boleto! Além disso, aceitamos todas as bandeiras de cartão de
+                        crédito em até 6x sem juros, confira as condições.</p>
+                    <a class="btn" href="">Saiba Mais</a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- inicio da section sobrenos -->
+
+        <section class="minha-secao" id="sobrenos">
+            <p class="containertexto">
+                <b> <i> Há 20 anos, a "Dona Flor" abriu suas portas em um bairro residencial em Curitiba. Fundada
+                        por uma familia apaixonada por flores, a pequena floricultura conquistou a confiança e
+                        fidelidade dos
+                        moradores
+                        ao longo dos anos. Com o tempo, expandiram a loja, contrataram uma equipe dedicada e se tornaram
+                        uma
+                        referência
+                        local. Além de oferecer uma variedade de flores e plantas, a nossa Floricultura também participa
+                        ativamente na
+                        comunidade, patrocinando eventos e promovendo workshops de jardinagem. Com a nossa historia no
+                        mercado
+                        curitibano continuamos a encantar os clientes e espalhar a beleza das flores.</i></b>
+            </p>
+            <div class="containerSobre">
+                <div class="contentSobre">
+                    <div class="accordion_item" style="background-image: url(./imagens/missao2.jpg);">
+                        <div class="background_overlay"></div>
+                        <div class="accordion_header">
+                            <span><b>Missão</b></span>
+                            <div class="icon">+</div>
+                        </div>
+                        <div class="accordion_content">
+                            <p class="highlighted-text">
+                                Nosso propósito é oferecer produtos florais de qualidade excepcional, combinados com um
+                                atendimento
+                                personalizado e cuidadoso. Buscamos transmitir a paixão pelas flores, trazendo beleza,
+                                inspiração e
+                                alegria para todos os momentos especiais da vida de nossos clientes.
+                            </p>
+                        </div>
                     </div>
-                    <div class="box">
-                        <img src="./imagens/flores.png" alt="">
-                        <h3>flores</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipising eli. desertunt, earum!</p>
-                        <a class="btn" href="">Saiba Mais</a>
+
+                    <div class="accordion_item" style="background-image: url(./imagens/visao.jpg);">
+                        <div class="background_overlay"></div>
+                        <div class="accordion_header">
+                            <span><b>Visão</b></span>
+                            <div class="icon">+</div>
+                        </div>
+                        <div class="accordion_content">
+                            <p class="highlighted-text">
+                                Ser reconhecida como a floricultura de referência, proporcionando momentos de beleza,
+                                encanto e emoção
+                                através das flores, enriquecendo a vida de nossa comunidade.
+                            </p>
+                        </div>
                     </div>
-                    <div class="box">
-                        <img src="./imagens/pagamento.png" alt="">
-                        <h3>Pagamentos</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipising eli. desertunt, earum!</p>
-                        <a class="btn" href="">Saiba Mais</a>
+
+                    <div class="accordion_item" style="background-image: url(./imagens/valores.jpg);">
+                        <div class="background_overlay"></div>
+                        <div class="accordion_header">
+                            <span><b>Valores</b></span>
+                            <div class="icon">+</div>
+                        </div>
+                        <div class="accordion_content highlighted-text">
+                            <ul>
+                                <li>Qualidade;</li>
+                                <li>Atendimento personalizado;</li>
+                                <li>Paixão pelas flores;</li>
+                                <li>Criatividade e inovação;</li>
+                                <li>Responsabilidade socioambiental;</li>
+                                <li>Parcerias;</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </section>
-
-        <!-- inicio da section quem somos -->
-            <section class="quemsomos" id="quemsomos">
-            <h1>Teste2</h1>
-            </section>
-
+            </div>
+            <script src="./javascript/accordion.js"></script>
+        </section>
         <!--  inicio da section dos produtos -->
-            <section class="produtos" id="produtos">
 
-            </section>
+        <section class="produtos" id="produtos">
+            <div class="text-box-produtos">
+                <h1 class="titleproducts">Confira nossos produtos!</h1>
+            </div>
+            <!-- primeiro produto -->
+            <div class="box-father">
+                <div class="box-son">
+                    <div class="product_image">
+                        <img class="imageproduct" src="./imagens/girassol.png" alt="flores-arranjadas">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
 
-            <!--  inicio da section da equipe -->
-            <section class="equipe" id="equipe">
-    
+                        </div>
+                    </div>
+                </div>
+                <div class="textoproduto">
+                    <h3>Arranjo Girassol</h3>
+                    <div class="price"><span>R$79,90</span></div>
+                </div>
+            </div>
+
+            <!-- segundo produto --
+            <div class="box-father">
+                <div class="box-son">
+                    <div class="product_image">
+                        <img class="imageproduct" src="./imagens/orquidea lilas.png" alt="flores-arranjadas">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="textoproduto">
+                    <h3>Orquídea Lilás</h3>
+                    <div class="price">R$39,90</div>
+                </div>
+            </div>
+
+            <!-- terceiro produto -->
+            <div class="box-father">
+                <div class="box-son">
+                    <div class="product_image">
+                        <img class="imageproduct" src="./imagens/rosas brancas.png" alt="flores-arranjadas">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="textoproduto">
+                    <h3>Rosas Brancas</h3>
+                    <div class="price"><span>R$49,90</span></div>
+                </div>
+            </div>
+
+            <!-- quarto produto -->
+            <div class="box-father">
+                <div class="box-son">
+                    <div class="product_image">
+                        <img class="imageproduct" src="./imagens/rosas azuis.png" alt="flores-arranjadas">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="textoproduto">
+                    <h3>Rosas Azuis</h3>
+                    <div class="price"><span>R$109,90</span></div>
+                </div>
+            </div>
+
+            <!-- quinto produto -->
+            <div class="box-father">
+                <div class="box-son">
+                    <div class="product_image">
+                        <img class="imageproduct" src="./imagens/margaridas.png" alt="flores-arranjadas">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="textoproduto">
+                    <h3>Margaridas</h3>
+                    <div class="price"><span>R$29,90</span></div>
+                </div>
+            </div>
+
+            <!-- sexto produto -->
+            <div class="box-father">
+                <div class="box-son">
+                    <div class="product_image">
+                        <img class="imageproduct" src="./imagens/rosas pink.png" alt="flores-arranjadas">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="textoproduto">
+                    <h3>Buquê Rosas Pink</h3>
+                    <div class="price"><span>R$99,90</span></div>
+                </div>
+            </div>
+            <!-- sétimo produto -->
+            <div class="box-father">
+                <div class="box-son">
+                    <div class="product_image">
+                        <img class="imageproduct" src="./imagens/astromelias.png" alt="flores-arranjadas">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="textoproduto">
+                    <h3>Arranjo Astromélias</h3>
+                    <div class="price"><span>R$139,90</span></div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="equipe" id="equipe">
+
+
+            <div class="containerEquipe">
+                <div class="textosEquipe" type="text">
+                    <h1>Nossa Equipe</h1>
+                    <p>Na nossa encantadora floricultura "Dona Flor", uma equipe apaixonada trabalha em perfeita
+                        harmonia. Jéssica cria arranjos deslumbrantes, Carol auxilia os clientes com simpatia, André
+                        cuida das plantas com habilidade, João gerencia a loja com eficiência, e Rafa entrega com
+                        carinho. Juntos, eles espalham alegria e beleza através das flores no "Jardim das Flores".
+                    </p>
+                </div>
+
+            </div>
+           <div class="containerEquipe">
+                <div class="wiii">
+                    <img src="./imagens/andre.jpg" alt="foto do andre leodoro" width="200" height="300">
+                    <img src="./imagens/carol.jpg" alt="foto da caroline alves" width="200" height="300">
+                    <img src="./imagens/jessica.jpg" alt="foto da jessica hickembick" width="200" height="300">
+                    <img src="./imagens/joao.jpg" alt="foto do joao" width="200" height="300">
+                    <img src="./imagens/rafa.jpg" alt="foto do rafael fantim" width="200" height="300">
+                </div>
+                </div>
+
             </section>
 
             <!-- inicio da section de contato -->
+
             <section class="contato" id="contato">
+                <!-- <section class="contatoh1">
+                <h1>Contato</h1>
+            </section> -->
                 <div class="contatotext">
-                    <h1>Contato</h1>
-                    <h2>Estamos ansiosos para ouvir você! Entre em contato conosco para tirar suas dúvidas, fazer um
-                    pedido
-                    personalizado ou simplesmente compartilhar sua paixão por flores. Nossa equipe amigável está pronta
-                    para
-                    atendê-lo e oferecer o melhor suporte possível. Você pode nos contatar por telefone, e-mail ou
-                    preenchendo o formulário de contato abaixo. Aguardamos seu contato e teremos prazer em ajudá-lo a
+
+
+                    <h2>Estamos ansiosos para ouvir <span class="ctth2voce">você</span>!</h2>
+                    <p>Entre em contato conosco para tirar suas dúvidas, fazer um
+                        pedido
+                        personalizado ou simplesmente compartilhar sua paixão por flores. Nossa equipe está pronta para
+                        te atender e oferecer o melhor suporte possível.</p>
+                    <!-- <p>Você pode nos contatar por telefone, e-mail ou
+                    preenchendo o formulário de contato ao lado.</p> -->
+                    <!-- <p>Aguardamos seu contato e teremos prazer em ajudá-lo a
                     tornar
-                    seus momentos especiais ainda mais floridos!</h2>
+                    seus momentos especiais ainda mais floridos!</p> -->
                 </div>
+
                 <div class="formulario">
-                    <form>
-                        <fieldset>
-                            <div>
-                                <label for="nome"> Nome </label>
-                                <input type="name" placeholder="Digite seu nome">
-                            </div>
-                            <div>
-                                <label for="E-mail"> E-mail</label>
-                                <input placeholder="Digite seu e-mail">
-                            </div>
-                            <div>
-                                <label for="Número de telefone">Número de telefone</label>
-                                <input placeholder="(00)00000-0000">
-                            </div>
-                            <div>
-                                <label for="Sua Mensagem">Sua Mensagem</label>
-                                <textarea name="Sua mensagem" id="" cols="30" rows="10"></textarea>
-                            </div>
-                            <div>
-                                <input type="submit">
-                            </div>
-                        </fieldset>
+
+                    <form class="form" id="form">
+
+                        <!-- <fieldset> -->
+
+                        <div class="form-control">
+                            <label for="nome"> Nome </label>
+                            <input type="name" id="cttname" placeholder="Digite seu nome">
+                            <i><img class="img-success" src="./imagens/success-icon.svg" alt=""></i>
+                            <i><img class="img-error" src="./imagens/error-icon.svg" alt=""></i>
+                            <small>Error Message</small>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="E-mail"> E-mail</label>
+                            <input type="email" id="cttemail" placeholder="Digite seu e-mail">
+                            <i><img class="img-success" src="./imagens/success-icon.svg" alt=""></i>
+                            <i><img class="img-error" src="./imagens/error-icon.svg" alt=""></i>
+                            <small>Error Message</small>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="Número de telefone">Número de telefone</label>
+                            <input type="tel" id="cttphonenumber" placeholder="(xx) xxxxx-xxxx" maxlength="15"
+                                minlength="14">
+                            <i><img class="img-success" src="./imagens/success-icon.svg" alt=""></i>
+                            <i><img class="img-error" src="./imagens/error-icon.svg" alt=""></i>
+                            <small>Error Message</small>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="Sua Mensagem">Sua Mensagem</label>
+                            <textarea name="Sua mensagem" placeholder="Digite sua mensagem" id="cttmessage" cols="30"
+                                rows="10"></textarea>
+                            <i><img class="img-success" src="./imagens/success-icon.svg" alt=""></i>
+                            <i><img class="img-error" src="./imagens/error-icon.svg" alt=""></i>
+                            <small>Error Message</small>
+                        </div>
+
+                        <!-- <div> -->
+                        <button type="submit" id="buttonenv">ENVIAR</button>
+                        <!-- </div> -->
+
+                        <!-- </fieldset> -->
                     </form>
                 </div>
             </section>
+            <script src="./javascript/validacao.js"></script>
+    </main>
 
-        </main>
-        <!--final da main-->
 
-        <!-- inicio do footer -->
-        <footer>
 
-        </footer>
-        <!--final do footer-->
-    </body>
-    <!--final do body-->
+    <!-- fim do header  -->
+
+    <footer>dança gatinho, dança</footer>
+
+    <script src="./javascript/script.js"></script>
+</body>
+
+
+
+
+
 </html>
