@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dona FLor</title>
     <!-- font weasome link a baixo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bad+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -88,9 +91,9 @@
 
             <div class="conteudo1">
                 <div class="slides">
-                    <input type="radio"  name="slide" id="slide1">
-                    <input type="radio"  name="slide" id="slide2">
-                    <input type="radio"  name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide1">
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
                     <div class="slide-s1">
                         <img src="./imagens/rosas-59-e-90-23-home.png" alt="Rosas 59,90">
                     </div>
@@ -125,50 +128,75 @@
 
         <!-- inicio da section de contato -->
 
-        <section class="contato">
-            <div class="contatotext">
-                <h1>Contato</h1>
 
-                <h2>Estamos ansiosos para ouvir você! Entre em contato conosco para tirar suas dúvidas, fazer um
+        <section class="contato">
+            <!-- <section class="contatoh1">
+                <h1>Contato</h1>
+            </section> -->
+            <div class="contatotext">
+
+
+                <h2>Estamos ansiosos para ouvir <span class="ctth2voce">você</span>!</h2>
+                <p>Entre em contato conosco para tirar suas dúvidas, fazer um
                     pedido
-                    personalizado ou simplesmente compartilhar sua paixão por flores. Nossa equipe amigável está pronta
-                    para
-                    atendê-lo e oferecer o melhor suporte possível. Você pode nos contatar por telefone, e-mail ou
-                    preenchendo o formulário de contato abaixo. Aguardamos seu contato e teremos prazer em ajudá-lo a
+                    personalizado ou simplesmente compartilhar sua paixão por flores. Nossa equipe está pronta para
+                    te atender e oferecer o melhor suporte possível.</p>
+                <!-- <p>Você pode nos contatar por telefone, e-mail ou
+                    preenchendo o formulário de contato ao lado.</p> -->
+                <!-- <p>Aguardamos seu contato e teremos prazer em ajudá-lo a
                     tornar
-                    seus momentos especiais ainda mais floridos!</h2>
+                    seus momentos especiais ainda mais floridos!</p> -->
             </div>
 
             <div class="formulario">
 
-                <form>
+                <form class="form" id="form">
 
-                    <fieldset>
+                    <!-- <fieldset> -->
 
-                        <div>
-                            <label for="nome"> Nome </label>
-                            <input type="name" placeholder="Digite seu nome">
-                        </div>
-                        <div>
-                            <label for="E-mail"> E-mail</label>
-                            <input placeholder="Digite seu e-mail">
+                    <div class="form-control">
+                        <label for="nome"> Nome </label>
+                        <input type="name" id="cttname" placeholder="Digite seu nome">
+                        <i><img class="img-success" src="./imagens/success-icon.svg" alt=""></i>
+                        <i><img class="img-error" src="./imagens/error-icon.svg" alt=""></i>
+                        <small>Error Message</small>
+                    </div>
 
-                        </div>
-                        <div>
-                            <label for="Número de telefone">Número de telefone</label>
-                            <input placeholder="(00)00000-0000">
-                        </div>
-                        <div>
-                            <label for="Sua Mensagem">Sua Mensagem</label>
-                            <textarea name="Sua mensagem" id="" cols="30" rows="10"></textarea>
-                        </div>
-                        <div>
-                            <input type="submit">
-                        </div>
-                    </fieldset>
+                    <div class="form-control">
+                        <label for="E-mail"> E-mail</label>
+                        <input type="email" id="cttemail" placeholder="Digite seu e-mail">
+                        <i><img class="img-success" src="./imagens/success-icon.svg" alt=""></i>
+                        <i><img class="img-error" src="./imagens/error-icon.svg" alt=""></i>
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="Número de telefone">Número de telefone</label>
+                        <input type="tel" id="cttphonenumber" placeholder="(xx) xxxxx-xxxx" maxlength="15"
+                            minlength="14">
+                        <i><img class="img-success" src="./imagens/success-icon.svg" alt=""></i>
+                        <i><img class="img-error" src="./imagens/error-icon.svg" alt=""></i>
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="Sua Mensagem">Sua Mensagem</label>
+                        <textarea name="Sua mensagem" placeholder="Digite sua mensagem" id="cttmessage" cols="30"
+                            rows="10"></textarea>
+                        <i><img class="img-success" src="./imagens/success-icon.svg" alt=""></i>
+                        <i><img class="img-error" src="./imagens/error-icon.svg" alt=""></i>
+                        <small>Error Message</small>
+                    </div>
+
+                    <!-- <div> -->
+                    <button type="submit" id="buttonenv">ENVIAR</button>
+                    <!-- </div> -->
+
+                    <!-- </fieldset> -->
                 </form>
             </div>
         </section>
+        <script src="./javascript/index.js"></script>
     </main>
 
 
