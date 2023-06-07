@@ -1,0 +1,883 @@
+/* reset do css */
+
+:root {
+
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: 5px solid rgb(202, 202, 194);
+    --outline-hover: .2rem solid rgba(0, 255, 47, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+
+/*  html como um todo estilização */
+
+body {
+    background-image: url(../imagens/Design\ sem\ nome.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+html {
+
+
+
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+
+
+}
+
+
+
+/*  cabeçalho estilização */
+header {
+    height: 13vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(26, 26, 26, 0.777);
+    backdrop-filter: blur(10px);
+    padding: 2rem 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+
+    box-shadow: 0px 2px 10px black;
+}
+
+
+/*  estilização do logo */
+
+
+
+.imagemlogo {
+    width: 260px;
+    height: 160px;
+
+}
+
+.imagemlogo:hover {
+
+    transform: scale(1.1);
+}
+
+header span {
+
+    color: green;
+
+}
+
+/* barra de navegação */
+
+header .barra-nav a {
+    font-size: 2rem;
+
+
+    color: rgb(248, 252, 248);
+
+}
+
+.listinha {
+    gap: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: -10%;
+
+}
+
+
+
+
+.listinha li:hover {
+
+    transform: scale(1.3);
+    animation: alternate-reverse;
+
+}
+
+
+/* animação da barra de navegação */
+
+
+
+header .icones a {
+    font-size: 2.5rem;
+    color: #f1eeee;
+    margin-left: 1.5rem;
+
+
+}
+
+header .icones a:hover {
+
+    color: rgb(87, 11, 169)
+}
+
+
+header #barrinha {
+
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0.3);
+    display: none;
+
+}
+
+
+
+
+
+/* PAGINAS DAS SECCS  */
+
+
+.foto1 {
+
+    background-color: #00e8f8;
+
+}
+
+
+
+/* slider */
+
+.slides-iniciais {
+    margin-top: 6%;
+    box-shadow: 1px 1px 10px black;
+
+
+}
+
+
+
+
+.slides {
+
+    display: flex;
+
+
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+
+    display: flex;
+
+
+}
+
+.foto1 {
+    width: 100%;
+    display: flex;
+}
+
+.manual-navigation {
+
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+
+    border: 5px solid rgb(245, 244, 244);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15%;
+
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+
+    background: #1e0e46;
+}
+
+#radio1:checked~.foto1 {
+    margin-left: 0;
+
+
+}
+
+#radio2:checked~.foto1 {
+
+    margin-left: -80%;
+
+}
+
+
+#radio3:checked~.foto1 {
+
+    margin-left: -200%;
+
+}
+
+
+.navigation-auto div {
+
+    border: 5px solid rgb(253, 253, 253);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+
+
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+
+    background-color: #050505;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+
+    background-color: #000000;
+
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+
+    background-color: #000000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* section de caracteristicas  */
+
+.TextoCaracteristica {
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+.caracteristicas {
+
+
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2%;
+
+
+}
+
+.cabecalho {
+
+    color: #1e0e46;
+    text-align: center;
+
+
+
+    font-size: 3.4rem;
+    margin-bottom: 47px;
+}
+
+.cabecalho span {
+    background: rgb(5, 96, 25);
+    color: white;
+    display: block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+
+
+.btn {
+
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    border: .2rem solid black;
+    color: rgb(234, 234, 236);
+    cursor: pointer;
+    background: green;
+    font-size: 16px;
+    transition: .7s;
+}
+
+.btn:hover {
+
+    background: orange;
+    scale: 1.2;
+}
+
+.caracteristicas .box-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    width: 55%;
+    margin-left: 22%;
+    padding: 0.7%;
+
+
+
+
+
+
+}
+
+.caracteristicas .box-container .box {
+    padding: 70px 1rem;
+    margin-top: -20px;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgb(6, 6, 6);
+    margin-left: 26px;
+
+    width: 90%;
+
+}
+
+.box img {
+    width: 40%;
+}
+
+.caracteristicas .box-container .box:hover {
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+    scale: 1.1;
+
+}
+
+.caracteristicas .box-container .box h3 {
+    font-size: 24px;
+    color: green;
+
+}
+
+.caracteristicas .box-container .box p {
+    font-size: 15px;
+    padding: 5%;
+
+}
+
+/* FIM DA SECTION DE CARACTERISTICAS */
+
+
+
+
+/* inicio da section sobrenos */
+
+
+/* inicio da section sobrenos */
+
+
+.minha-secao {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* estilizaçao do texto da historia (sobre nos)   */
+/* Estilo da seção Sobre Nós */
+
+#sobrenos {
+    padding: 40px;
+    background-color: #f2f2f2;
+    margin-top: 100px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+  }
+  
+  .grid-item-left {
+    margin-bottom: 40px;
+  }
+  
+  .grid-item-right {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+  }
+  
+  .grid-subitem {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo dos títulos */
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo do texto da História */
+  .history-text {
+    color: #666;
+    line-height: 1.5;
+    font-size: 18px;
+  }
+  
+  /* Estilo do texto da Missão, Visão e Valores */
+  .subitem-text {
+    color: #666;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  
+  /* Estilo da lista de Valores */
+  .values-list {
+    list-style-type: disc;
+    color: #666;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+/* produtos */
+
+.titleproducts {
+    font-size: 30px;
+}
+
+.produtos {
+    display: flex;
+
+    height: 100vh;
+    gap: 2.0rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produtos .box-father {
+    gap: 1.5rem;
+}
+
+
+.produtos .box-father .box-son {
+
+    box-shadow: 0 .5rem 1.5rem rgb(0, 0, 0, .1);
+    border-radius: .5rem;
+    border: .1rem solid rgb(0, 0, 0, .1);
+    position: relative;
+}
+
+.produtos .box-father .box-son .product_image {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.produtos .box-father .box-son .product_image img {
+    width: 50%;
+}
+
+.produtos .box-father .box-son .product_image .icons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+
+}
+
+.produtos .box-father .box-son:hover .product_image img {
+    transform: scale(1.2);
+}
+
+.produtos .box-father .box-son .product_image .icons a {
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 100%;
+    background: var(--red);
+    color: rgba(255, 255, 255, 0);
+}
+
+
+.produtos .box-father .box-son .product_image .icons a:hover {
+    background: rgba(0, 0, 0, 0.445);
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+.produtos .box-father .textoproduto {
+    padding: 2rem;
+    text-align: center;
+}
+
+.produtos .box-father .textoproduto h3 {
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.produtos .box-father .textoproduto .price {
+    font-size: 1.5rem;
+    color: var(--black);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.text-box-produtos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* produtos */
+
+
+
+    .containerEquipe {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 500px;
+        width: 1300px;
+        flex-direction: row;
+    }
+
+    .textosEquipe {
+        width: 1200px;
+        height: 400px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        font-family: 'Cedarville Cursive', cursive;
+        font-size: 40px;
+        color: rgb(241, 153, 37);
+    }
+
+    .textosEquipe p {
+        font-family: 'Varela Round', sans-serif;
+        color: black;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-size: 30px;
+    }
+
+    img {
+        border-radius: 50px;
+    }
+
+    .wiii {
+        gap: 20px;
+    }
+
+    .wiii :hover {
+        scale: 1.2;
+    }
+
+
+
+.contato {
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(../imagens/background-contato.jpg); */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-position: center;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+/* .contatoh1 {
+    color: #ff534e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    width: 100%;
+    background-image: url(../imagens/lisianthus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+} */
+
+.contatotext {
+    display: flex;
+    /* background-color: yellow; */
+    justify-content: top;
+    align-self: center;
+    flex-direction: column;
+    height: 600px;
+    width: 50%;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+.contatotext p,
+h2 {
+    margin-bottom: 60px;
+
+}
+
+.contatotext p {
+    font-family: 'Bad Script', cursive;
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 20%;
+}
+
+.contatotext h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 54px;
+    margin-left: 10%;
+}
+
+.ctth2voce {
+    font-family: 'Amatic SC', cursive;
+    font-size: 62px;
+    color: #f3150d;
+}
+
+.form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.form-control.success i .img-success {
+    visibility: visible;
+}
+
+.form-control.error i .img-error {
+    visibility: visible;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form i {
+    padding-left: 5px;
+    padding-top: 10px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.form small {
+    display: flex;
+    position: relative;
+    font-size: 12px;
+    align-self: flex-end;
+    justify-content: center;
+    visibility: hidden;
+    color: #DB5A5A;
+}
+
+.formulario {
+    height: 600px;
+    background-image: url(../imagens/formflower.jpg);
+
+    border: 1px solid rgba(236, 165, 210, 0.25);
+    justify-content: center;
+    border-radius: 20px;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-right: 15%;
+}
+
+
+form label {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+form input,
+form textarea {
+    outline: unset;
+    padding: 10px;
+    width: 350px;
+    color: rgb(0, 0, 0);
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+form input:focus,
+form textarea:focus {
+    background-color: wheat
+}
+
+form button[type=submit] {
+    margin-top: 5px;
+    cursor: pointer;
+    width: 350px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: pink;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+/* responsividade (media queries)*/
+
+@media (max-width:991px) {
+
+
+    html {
+        font-size: 55%;
+
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    section {
+
+        padding: 2rem;
+    }
+
+    .inicio {
+        background-position: left;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+
+    html .fa-bars {
+        display: block;
+    }
+
+    header .barra-nav {
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0 .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #barrinha:checked~.barra-nav {
+
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+
+
+    header .barra-nav a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0, 0, 0 .1);
+        display: block;
+        color: #333;
+
+
+    }
+
+
+
+
+    .listinha {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}
+
+
+
+
+
+@media (max-width:450px) {
+
+
+    html {
+        font-size: 55%
+    }
+
+}
