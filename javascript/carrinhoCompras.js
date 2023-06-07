@@ -39,10 +39,10 @@ function adicionaCompra6 (){
 function paginaCompras(){
     var somaTotal = 0
     for(var i = 0; i < produtos.length; i++){
-        soma += produtos[i]
+        somaTotal += produtos[i]
     }
     
-    document.write(`
-    <div>${soma}</div>
-    `)
+    alert(`A soma dos produtos é igual a: R$ ${somaTotal}`)
+
 }
+
