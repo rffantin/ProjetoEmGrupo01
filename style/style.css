@@ -427,6 +427,9 @@ header .fa-bars {
 /* inicio da section sobrenos */
 
 
+/* inicio da section sobrenos */
+
+
 .minha-secao {
     width: 100vw;
     height: 100vh;
@@ -436,140 +439,68 @@ header .fa-bars {
 }
 
 /* estilizaçao do texto da historia (sobre nos)   */
-.containertexto {
-    box-shadow: 8px 10px 5px #0003;
-    max-width: 600px;
-    border-radius: 10px;
-    padding: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -150px;
-    margin-bottom: 80px;
-    text-align: center;
-}
+/* Estilo da seção Sobre Nós */
 
-/* estilizaçao do container da historia (sobre nos)   */
-.containerSobre {
-    box-shadow: 8px 10px 5px #0003;
-    max-width: 600px;
-    border-radius: 5px;
-    padding: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
-.contentSobre {
-    display: block;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.accordion_item {
-    border-radius: 30px;
-}
-
-.accordion_item:hover {
-    opacity: 0.9;
-}
-
-.accordion_header {
-    padding: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-}
-
-.accordion_content {
-    margin-left: 10px;
-    margin-right: 10px;
-    overflow: hidden;
-    height: 0;
-    transition: all .5s ease;
+#sobrenos {
+    padding: 40px;
+    background-color: #f2f2f2;
+    margin-top: 100px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+  }
+  
+  .grid-item-left {
+    margin-bottom: 40px;
+  }
+  
+  .grid-item-right {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+  }
+  
+  .grid-subitem {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo dos títulos */
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo do texto da História */
+  .history-text {
+    color: #666;
+    line-height: 1.5;
     font-size: 18px;
-    margin-top: 15px;
-}
-
-.active {
-    padding-bottom: 10px;
-    padding-bottom: 10px;
-}
-
-span,
-.icon {
-    font-weight: 900;
-}
-
-.minha-secao p {
-    text-align: justify;
-    font-size: 1.1em;
-    margin-left: 200px;
-}
-
-.containerSobre {
-    display: flex;
-    margin-top: -300px;
-}
-
-
-.accordion_item {
-    position: relative;
-}
-
-.background_overlay {
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    opacity: 0.7;
-    z-index: 1;
-}
-
-.accordion_item .accordion_content,
-.accordion_item .accordion_header {
-    position: relative;
-    z-index: 2;
-}
-
-.highlighted-text {
-    color: #fff;
-    font-weight: bold;
-    font-size: 15px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-}
-
-.tira-fotos {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.tira-fotos img {
-    width: 100px;
-    height: auto;
-}
-
-.container-fotos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: -300px;
-}
-
-.container-fotos img {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 10px;
-}
-
+  }
+  
+  /* Estilo do texto da Missão, Visão e Valores */
+  .subitem-text {
+    color: #666;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  
+  /* Estilo da lista de Valores */
+  .values-list {
+    list-style-type: disc;
+    color: #666;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-left: 20px;
+  }
 
 /* produtos */
 
