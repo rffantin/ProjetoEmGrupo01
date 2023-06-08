@@ -445,6 +445,8 @@ header .fa-bars {
     padding: 40px;
     background-color: #f2f2f2;
     margin-top: 100px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 40px;
   }
   
   .container {
