@@ -30,14 +30,14 @@
 
 
         <!-- LOGO DA LOJA -->
-        <a href="#" class="LOGO"><span></span><img class="imagemlogo" src="./imagens/donaflorlogo.png" alt=""></a>
+        <a href="#inicio" class="LOGO"><span></span><img class="imagemlogo" src="./imagens/donaflorlogo.png" alt=""></a>
 
         <!-- BARRAS DE NAVEGAÇÂO DO HEADER -->
         <nav class="barra-nav">
             <ul class="listinha">
                 <li> <a href="#inicio">Inicio</a></li>
-                <li> <a href="#sobrenos">Sobre nós</a></li>
                 <li> <a href="#produtos">Nossos produtos</a></li>
+                <li> <a href="#sobrenos">Sobre nós</a></li>
                 <li> <a href="#equipe">Nossa equipe</a></li>
                 <li> <a href="#contato">Contato</a></li>
             </ul>
@@ -45,8 +45,7 @@
         </nav>
         <!-- ICONES DO LADO DIREITO DO HEADER -->
         <div class="icones">
-
-            <a href="" class="fas fa-shopping-cart"></a>
+            <a href="" class="fas fa-shopping-cart" onclick="paginaCompras()"></a>
         </div>
 
         <!-- FIM DO HEADER -->
@@ -102,7 +101,6 @@
 
         </section>
 
-        <!-- nossas caracteristicas -->
 
         <!-- começa a section que engloba os 3 cards iniciais -->
         <section class="caracteristicas" id="caracteristicas">
@@ -143,6 +141,131 @@
             </div>
         </section>
 
+        <!--  inicio da section dos produtos -->
+        <section class="produtos" id="produtos">
+            <div class="text-box-produtos">
+                <h1 class="titleproducts">Confira nossos produtos!</h1>
+            </div>
+            <!-- primeiro produto -->
+            <div class="box-father">
+                <div class="box-son">
+                    <div class="product_image">
+                        <img class="imageproduct" src="./imagens/girassol.png" alt="Girassóis">
+                        <div class="icons">
+                            <a href="#produtos" class="fas fa-shopping-cart" onclick="adicionaCompra1()"></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="textoproduto">
+                    <h3>Arranjo Girassol</h3>
+                    <div class="price" id="item1"><span>R$79,90</span></div>
+                </div>
+            </div>
+
+            <!-- segundo produto --
+            <div class="box-father">
+                <div class="box-son">
+                    <div class="product_image">
+                        <img class="imageproduct" src="./imagens/orquidea lilas.png" alt="flores-arranjadas">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="textoproduto">
+                    <h3>Orquídea Lilás</h3>
+                    <div class="price">R$39,90</div>
+                </div>
+            </div>
+
+            <!- terceiro produto -->
+            <div class="box-father">
+                <div class="box-son">
+                    <div class="product_image">
+                        <img class="imageproduct" src="./imagens/rosas brancas.png" alt="Rosas Brancas">
+                        <div class="icons">
+                            <a href="#produtos" class="fas fa-shopping-cart" onclick="adicionaCompra2()"></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="textoproduto">
+                    <h3>Rosas Brancas</h3>
+                    <div class="price"><span>R$49,90</span></div>
+                </div>
+            </div>
+
+            <!-- quarto produto -->
+            <div class="box-father">
+                <div class="box-son">
+                    <div class="product_image">
+                        <img class="imageproduct" src="./imagens/rosas azuis.png" alt="Rosas Azuis">
+                        <div class="icons">
+                            <a href="#produtos" class="fas fa-shopping-cart" onclick="adicionaCompra3()"></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="textoproduto">
+                    <h3>Rosas Azuis</h3>
+                    <div class="price"><span>R$109,90</span></div>
+                </div>
+            </div>
+
+            <!-- quinto produto -->
+            <div class="box-father">
+                <div class="box-son">
+                    <div class="product_image">
+                        <img class="imageproduct" src="./imagens/margaridas.png" alt="margaridass">
+                        <div class="icons">
+                            <a href="#produtos" class="fas fa-shopping-cart" onclick="adicionaCompra4()"></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="textoproduto">
+                    <h3>Margaridas</h3>
+                    <div class="price"><span>R$29,90</span></div>
+                </div>
+            </div>
+
+            <!-- sexto produto -->
+            <div class="box-father">
+                <div class="box-son">
+                    <div class="product_image">
+                        <img class="imageproduct" src="./imagens/rosas pink.png" alt="rosas pink">
+                        <div class="icons">
+                            <a href="#produtos" class="fas fa-shopping-cart" onclick="adicionaCompra5()"></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="textoproduto">
+                    <h3>Buquê Rosas Pink</h3>
+                    <div class="price"><span>R$99,90</span></div>
+                </div>
+            </div>
+            <!-- sétimo produto -->
+            <div class="box-father">
+                <div class="box-son">
+                    <div class="product_image">
+                        <img class="imageproduct" src="./imagens/astromelias.png" alt="astromelias">
+                        <div class="icons">
+                            <a href="#produtos" class="fas fa-shopping-cart" onclick="adicionaCompra6()"></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="textoproduto">
+                    <h3>Arranjo Astromélias</h3>
+                    <div class="price"><span>R$139,90</span></div>
+                </div>
+            </div>
+
+        </section>
+
         <!-- inicio da section sobrenos -->
         <section class="minha-secao" id="sobrenos">
             <div class="container">
@@ -180,6 +303,7 @@
                     <div class="grid-subitem" style="flex: 1;">
                         <h2>Valores</h2>
                         <ul class="values-list">
+                            <br>
                             <li>Qualidade</li>
                             <li>Atendimento personalizado</li>
                             <li>Paixão pelas flores</li>
@@ -191,136 +315,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
-        <!--  inicio da section dos produtos -->
-
-        <section class="produtos" id="produtos">
-            <div class="text-box-produtos">
-                <h1 class="titleproducts">Confira nossos produtos!</h1>
-            </div>
-            <!-- primeiro produto -->
-            <div class="box-father">
-                <div class="box-son">
-                    <div class="product_image">
-                        <img class="imageproduct" src="./imagens/girassol.png" alt="flores-arranjadas">
-                        <div class="icons">
-                            <a href="#" class="fas fa-shopping-cart"></a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="textoproduto">
-                    <h3>Arranjo Girassol</h3>
-                    <div class="price"><span>R$79,90</span></div>
-                </div>
-            </div>
-
-            <!-- segundo produto --
-            <div class="box-father">
-                <div class="box-son">
-                    <div class="product_image">
-                        <img class="imageproduct" src="./imagens/orquidea lilas.png" alt="flores-arranjadas">
-                        <div class="icons">
-                            <a href="#" class="fas fa-shopping-cart"></a>
-                            <a href="#" class="fas fa-heart"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="textoproduto">
-                    <h3>Orquídea Lilás</h3>
-                    <div class="price">R$39,90</div>
-                </div>
-            </div>
-
-            <!-- terceiro produto -->
-            <div class="box-father">
-                <div class="box-son">
-                    <div class="product_image">
-                        <img class="imageproduct" src="./imagens/rosas brancas.png" alt="flores-arranjadas">
-                        <div class="icons">
-                            <a href="#" class="fas fa-shopping-cart"></a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="textoproduto">
-                    <h3>Rosas Brancas</h3>
-                    <div class="price"><span>R$49,90</span></div>
-                </div>
-            </div>
-
-            <!-- quarto produto -->
-            <div class="box-father">
-                <div class="box-son">
-                    <div class="product_image">
-                        <img class="imageproduct" src="./imagens/rosas azuis.png" alt="flores-arranjadas">
-                        <div class="icons">
-                            <a href="#" class="fas fa-shopping-cart"></a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="textoproduto">
-                    <h3>Rosas Azuis</h3>
-                    <div class="price"><span>R$109,90</span></div>
-                </div>
-            </div>
-
-            <!-- quinto produto -->
-            <div class="box-father">
-                <div class="box-son">
-                    <div class="product_image">
-                        <img class="imageproduct" src="./imagens/margaridas.png" alt="flores-arranjadas">
-                        <div class="icons">
-                            <a href="#" class="fas fa-shopping-cart"></a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="textoproduto">
-                    <h3>Margaridas</h3>
-                    <div class="price"><span>R$29,90</span></div>
-                </div>
-            </div>
-
-            <!-- sexto produto -->
-            <div class="box-father">
-                <div class="box-son">
-                    <div class="product_image">
-                        <img class="imageproduct" src="./imagens/rosas pink.png" alt="flores-arranjadas">
-                        <div class="icons">
-                            <a href="#" class="fas fa-shopping-cart"></a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="textoproduto">
-                    <h3>Buquê Rosas Pink</h3>
-                    <div class="price"><span>R$99,90</span></div>
-                </div>
-            </div>
-            <!-- sétimo produto -->
-            <div class="box-father">
-                <div class="box-son">
-                    <div class="product_image">
-                        <img class="imageproduct" src="./imagens/astromelias.png" alt="flores-arranjadas">
-                        <div class="icons">
-                            <a href="#" class="fas fa-shopping-cart"></a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="textoproduto">
-                    <h3>Arranjo Astromélias</h3>
-                    <div class="price"><span>R$139,90</span></div>
-                </div>
-            </div>
-
-        </section>
-
 
         <section class="equipe" id="equipe">
 
@@ -336,17 +330,34 @@
                 </div>
 
             </div>
-            <div class="containerEquipe">
-                <div class="wiii">
-                    <img src="./imagens/andre.jpg" alt="foto do andre leodoro" width="200" height="300">
-                    <img src="./imagens/carol.jpg" alt="foto da caroline alves" width="200" height="300">
-                    <img src="./imagens/jessica.jpg" alt="foto da jessica hickembick" width="200" height="300">
-                    <img src="./imagens/joao.jpg" alt="foto do joao" width="200" height="300">
-                    <img src="./imagens/rafa.jpg" alt="foto do rafael fantim" width="200" height="300">
+            <div class="containerEquipeCards">
+                <div class="andre">
+                    <h1>Andre</h1>
+                    <p>Jardineiro</p>
+                </div>
+                <div class="carol">
+                    <h1>Carol</h1>
+                    <p>Gerente</p>
+                </div>
+                <div class="rafa">
+                <h1>Rafael</h1>
+                <p>Entregador</p>
+                </div>
+                <div class="joao">
+                    <h1>Joao</h1>
+                    <p>Financeiro</p>
+                </div>
+                <div class="jessica">
+                    <h1>Jessica</h1>
+                    <p>Atendente</p>
                 </div>
             </div>
 
         </section>
+
+
+
+
 
         <!-- inicio da section de contato -->
 
@@ -420,11 +431,14 @@
         <script src="./javascript/validacao.js"></script>
     </main>
 
-
-
+    <script src="./javascript/carrinhoCompras.js"></script>
     <!-- fim do header  -->
 
-    <footer>dança gatinho, dança</footer>
+    <footer>
+        <h3>Desenvolvido por ANDRE, RAFAEL, JOAO, CAROL, JESSICA. TODOS OS DIREITOS RESERVADOS </h3>
+        <a href="https://github.com/Joa1zin/ProjetoEmGrupo01.git" target="_blank">
+            <img src="./imagens/github-logo2.png" alt="GitHub"></a>
+    </footer>
 
     <script src="./javascript/script.js"></script>
 </body>
